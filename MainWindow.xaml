@@ -5,8 +5,57 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calendar"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="700" Width="1000" Background="Transparent" FontSize="16" >
     <Grid>
-        
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.2*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+       
+        <Border CornerRadius="20 0 0 20" Background="#838EF2" Grid.RowSpan="6">
+          
+                <Label Content="Zaloguj się" FontWeight="DemiBold" FontSize="25" HorizontalContentAlignment="Center" Height="auto" Margin="0,150,0,0" VerticalAlignment="Top" Width="300"/>
+
+               
+
+
+        </Border>
+            <Border CornerRadius="0 20 20 0" Background="White" Grid.Column="1" Grid.RowSpan="6">
+               
+            </Border>
+        </Grid>
+      
+
+
+        <Button Content="Zaloguj się" HorizontalAlignment="Left" Margin="122,550,0,0" VerticalAlignment="Top" Height="55" Width="300">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="White"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    CornerRadius="30"
+                    >
+                        <!-- Tutaj określasz zaokrąglenie -->
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Label Content="Nazwa użytkownika" HorizontalAlignment="Left" Margin="122,250,0,0" VerticalAlignment="Top"/>
+        <TextBlock Width="300" Height="40" Background="white" HorizontalAlignment="Left" Margin="122,290,0,348"/>
+        <Label Content="Hasło" HorizontalAlignment="Left" Margin="122,350,0,0" VerticalAlignment="Top"/>
+        <PasswordBox Width="300" Height="40" HorizontalAlignment="Left" Margin="122,390,0,348" Background="White"></PasswordBox>
+
     </Grid>
 </Window>
