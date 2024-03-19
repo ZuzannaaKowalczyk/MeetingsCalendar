@@ -18,17 +18,9 @@
 
 
 
-            <Border CornerRadius="20 0 0 20" Background="White" >
-
-
-                <Label Content="Kalendarz" HorizontalAlignment="Center" VerticalAlignment="Center"></Label>
-
-
-
-            </Border>
-            <Border CornerRadius="0 20 20 0" Background="#62BCF0" Grid.Column="1" >
-
-            </Border>
+            <Border CornerRadius="20 0 0 20" Background="White"/>
+            <Border CornerRadius="0 20 20 0" Background="#C5E001" Grid.Column="1"/>
+            
         </Grid>
 
         <Grid>
@@ -36,24 +28,42 @@
                 <ColumnDefinition Width="1.2*"></ColumnDefinition>
                 <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-       
 
 
+            <StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 50 0 600">
-                <Button>
-                    <fa:ImageAwesome Icon="AngleLeft" Height="31" Width="18"/>
+                <Button Background="Transparent" BorderBrush="Transparent">
+                    <fa:ImageAwesome Icon="AngleLeft" Style="{StaticResource angle}"/>
                 </Button>
 
-                <Button Content="2020"></Button>
-                <Button Content="2021"></Button>
-                <Button Content="2022"></Button>
-                <Button Content="2023"></Button>
-                <Button Content="2024"></Button>
+                <Button Content="2020" Style="{StaticResource button}"></Button>
+                <Button Content="2021" Style="{StaticResource button}"></Button>
+                    <Button Content="2022" Style="{StaticResource button}" FontSize="26" Foreground="#C5E001"></Button>
+                <Button Content="2023" Style="{StaticResource button}"></Button>
+                <Button Content="2024" Style="{StaticResource button}"></Button>
 
-                <Button>
-                    <fa:ImageAwesome Icon="AngleRight" Height="31" Width="18"/>
+                <Button Background="Transparent" BorderBrush="Transparent">
+                    <fa:ImageAwesome Icon="AngleRight"  Style="{StaticResource angle}"/>
                 </Button>
             </StackPanel>
+        </StackPanel>
+            
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="St" Style="{StaticResource monthButton}"/>
+            <Button Content="Lu" Style="{StaticResource monthButton}"/>
+            <Button Content="Mr" Style="{StaticResource monthButton}"/>
+            <Button Content="Kw" Style="{StaticResource monthButton}"/>
+            <Button Content="Ma" Style="{StaticResource monthButton}"/>
+            <Button Content="Cz" Style="{StaticResource monthButton}"/>
+            <Button Content="Lip" Style="{StaticResource monthButton}"/>
+            <Button Content="Sr" Style="{StaticResource monthButton}"/>
+            <Button Content="Wr" Style="{StaticResource monthButton}"/>
+            <Button Content="Pa" Style="{StaticResource monthButton}"/>
+            <Button Content="List" Style="{StaticResource monthButton}"/>
+            <Button Content="Gr" Style="{StaticResource monthButton}"/>
+            
+        </StackPanel>
+        
         </Grid>
     </Grid>
 </Window>

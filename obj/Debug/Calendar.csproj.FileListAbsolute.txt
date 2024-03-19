@@ -16,8 +16,6 @@ C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\obj\Debug\
 C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\bin\Debug\FontAwesome.WPF.dll
 C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\bin\Debug\FontAwesome.WPF.xml
 C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\obj\Debug\Calendar.csproj.CopyComplete
-C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\obj\Debug\Window1.g.cs
-C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\obj\Debug\Window1.baml
 C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\bin\Debug\Microsoft.Xaml.Behaviors.dll
 C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\bin\Debug\Prism.dll
 C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\bin\Debug\Prism.Wpf.dll
@@ -27,3 +25,8 @@ C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\bin\Debug\
 C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\bin\Debug\Prism.xml
 C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\bin\Debug\Prism.Wpf.pdb
 C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\bin\Debug\Prism.Wpf.xml
+C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\bin\Debug\EntityFramework.dll
+C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\bin\Debug\EntityFramework.xml
+C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\obj\Debug\App.baml
