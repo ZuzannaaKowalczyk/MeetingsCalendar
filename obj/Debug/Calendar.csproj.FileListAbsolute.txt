@@ -2,11 +2,9 @@ C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\bin\Debug\
 C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\bin\Debug\Calendar.exe
 C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\bin\Debug\Calendar.pdb
 C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\obj\Debug\Calendar.csproj.AssemblyReference.cache
-C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\obj\Debug\MainWindow.g.cs
 C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\obj\Debug\App.g.cs
 C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\obj\Debug\Calendar_MarkupCompile.cache
 C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\obj\Debug\Calendar_MarkupCompile.lref
-C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\obj\Debug\MainWindow.baml
 C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\obj\Debug\Calendar.g.resources
 C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\obj\Debug\Calendar.Properties.Resources.resources
 C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\obj\Debug\Calendar.csproj.GenerateResource.cache
@@ -30,3 +28,9 @@ C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\bin\Debug\
 C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\bin\Debug\EntityFramework.xml
 C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\obj\Debug\App.baml
+C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\obj\Debug\Views\RegistrationWindow.baml
+C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\obj\Debug\Views\LoginWindow.g.cs
+C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\obj\Debug\Views\MainWindow.g.cs
+C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\obj\Debug\Views\RegistrationWindow.g.cs
+C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\obj\Debug\Views\LoginWindow.baml
+C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\obj\Debug\Views\MainWindow.baml

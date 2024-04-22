@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Calendar"
              xmlns:fa="http://schemas.fontawesome.io/icons/"
-             StartupUri="MainWindow.xaml">
+             StartupUri="Views/MainWindow.xaml">
     <Application.Resources>
 
 
@@ -25,10 +25,10 @@
 
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Foreground" Value="#C5E001"></Setter>
+                    <Setter Property="Foreground" Value="#C5E001"></Setter> <!-- kolor przy najechaniu myszką-->
                 </Trigger>
                 <Trigger Property="IsMouseCaptured" Value="True">
-                    <Setter Property="Foreground" Value="Red"></Setter>
+                    <Setter Property="Foreground" Value="Black"></Setter> <!-- kolor przy kliknięciu-->
                 </Trigger>
             </Style.Triggers>
         </Style>
@@ -36,9 +36,60 @@
         <Style x:Key="angle" TargetType="fa:ImageAwesome">
             <Setter Property="Width" Value="25"/>
             <Setter Property="Height" Value="25"/>
-            <Setter Property="Margin" Value="0 4 0 0"/>
+            <Setter Property="Margin" Value="20 0 20 0"/>
             <Setter Property="Foreground" Value="{Binding Path= Foreground, RelativeSource={RelativeSource AncestorType={x:Type Button}}}"/>
         </Style>
-        
+
+        <Style x:Key="monthButton" TargetType="Button" BasedOn="{StaticResource button}">
+            <Setter Property="FontSize" Value="14"/>
+            
+
+        </Style>
+
+        <Style x:Key="eventButton" TargetType="Button">
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="Margin" Value="10,20,10,10"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="20" Background="White" Padding="20,10,20,10">
+                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+        </Style>
+
+        <Style x:Key="registrationButton" TargetType="Button">
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="Margin" Value="10,20,10,10"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="20" Background="#8057E6" Padding="20,10,20,10">
+                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+  
+
+        <Style x:Key="closeButton" TargetType="Button">
+            <Setter Property="HorizontalAlignment" Value="Right"/>
+            <Setter Property="Margin" Value="10,20,10,10"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="20" Background="White" Padding="15,5,15,10">
+                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Application.Resources>
 </Application>

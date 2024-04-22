@@ -1,0 +1,30 @@
+﻿<Window x:Class="Calendarz.RegistrationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Register" Height="340" Width="577" Background="Transparent" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1.2*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Border CornerRadius="10 0 0 10" Background="#8057E6" Grid.Column="0"/>
+        <Border CornerRadius="0 10 10 0" Background="white" Grid.Column="1"/>
+        <StackPanel Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Image Source="C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\image\Login-rafiki.png" Height="250" Width="250"/>
+
+        </StackPanel>
+        <StackPanel Grid.Column="2" Margin="30 30 30 40" VerticalAlignment="Bottom">
+            <TextBlock Text="Nazwa użytkownika" />
+            <TextBox x:Name="txtUsername" GotFocus="TextBox_GotFocus" LostFocus="TextBox_LostFocus" Margin="0,5,0,15" Height="20" BorderThickness="0 0 0 1"  Background="Transparent"/>
+            <TextBlock Text="Hasło"  />
+            <PasswordBox x:Name="txtPassword" GotFocus="PasswordBox_GotFocus" LostFocus="PasswordBox_LostFocus" Margin="0,5,0,10" Height="20" BorderThickness="0 0 0 1"  Background="Transparent"/>
+            <Button Content="Zarejestruj się" Style="{StaticResource registrationButton}" HorizontalAlignment="Center" />
+            <WrapPanel HorizontalAlignment="Center">
+                <TextBlock Text="Jeśli masz już konto, "  Foreground="gray"  FontSize="10" Padding="0 5 0 0"></TextBlock>
+                <Button Content="zaloguj się"  Foreground="gray"  FontSize="10" Padding="0 5 0 0" Background="Transparent" BorderThickness="0 0 0 1" BorderBrush="gray" ></Button>
+            </WrapPanel>
+        </StackPanel>
+    </Grid>
+</Window>

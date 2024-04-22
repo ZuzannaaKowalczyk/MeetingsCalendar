@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\App.xaml
-1219584333
+3-748081385
 
-61274306109
+8-503208705
 211135216405
-MainWindow.xaml;
+Views\LoginWindow.xaml;Views\MainWindow.xaml;Views\RegistrationWindow.xaml;
 
 False
 

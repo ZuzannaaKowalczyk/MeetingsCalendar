@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Data.Entity;
+using static Calendar.MainWindow;
 
 namespace Calendar
 {
@@ -48,21 +49,25 @@ namespace Calendar
             public DateTime EndDate { get; set; }
         }
 
-        public class BloggingContext : DbContext
+
+        private void Close_Click(object sender, RoutedEventArgs e)
         {
-            public DbSet<User> Blogs { get; set; }
-            public DbSet<Events> Posts { get; set; }
+            Application.Current.Shutdown();
         }
 
-        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+
+        private void Minimize_Window(object sender, RoutedEventArgs e)
         {
-            if (e.ChangedButton == MouseButton.Left)
-            {
-                this.DragMove();
-            }
+            WindowState = WindowState.Minimized;
+        }
+
+        private void Close_Window(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
 
     }
+
 
     
 
