@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Calendar.ViewModels;
+using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,14 +16,17 @@ using System.Windows.Shapes;
 
 namespace Calendar
 {
-    /// <summary>
-    /// Logika interakcji dla klasy LoginWindow.xaml
-    /// </summary>
     public partial class LoginWindow : Window
     {
+        private LoginViewModel ViewModel;
+
+        private string connectionString = "Server=LAPTOP-979QAFDU;Database=MeetingsCalendar;Integrated Security=True;";
+
         public LoginWindow()
         {
             InitializeComponent();
+            ViewModel = new LoginViewModel();
+            DataContext = ViewModel;
         }
 
         private void Window_Funcionality(object sender, MouseButtonEventArgs e)
@@ -42,7 +47,22 @@ namespace Calendar
 
         private void Log_In(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
+            UserSession.nazwaUzytkownika = txtUsername.Text;
+            string nazwaUzytkownika = txtUsername.Text;
+            string haslo = txtPassword.Password;
+            ViewModel.Login(nazwaUzytkownika,haslo,connectionString);
         }
+
+        public class UserSession
+        {
+            public static string nazwaUzytkownika { get; set; }
+        }
+
+
+        private void ToRegister_Window(object sender, RoutedEventArgs e)
+        {
+            ViewModel.OpenRegistrationWindow();
+        }
+
     }
 }

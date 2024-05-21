@@ -34,3 +34,13 @@ C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\obj\Debug\
 C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\obj\Debug\Views\RegistrationWindow.g.cs
 C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\obj\Debug\Views\LoginWindow.baml
 C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\obj\Debug\Views\MainWindow.baml
+C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\bin\Debug\System.Buffers.dll
+C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\bin\Debug\System.Memory.dll
+C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\bin\Debug\System.Buffers.xml
+C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\bin\Debug\System.Memory.xml
+C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\zuzio\Documents\studia\Inż_II_rok\sem4\P4\Projekt1\Calendar\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml

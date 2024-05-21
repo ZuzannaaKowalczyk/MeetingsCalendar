@@ -1,63 +1,71 @@
-﻿// File: RegistrationWindow.xaml.cs
+﻿using Calendar.ViewModels;
+using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+using static Calendar.LoginWindow;
 
-namespace Calendarz
+namespace Calendar
 {
     public partial class RegistrationWindow : Window
     {
-        private const string UsernamePlaceholder = "Username";
-        private const string PasswordPlaceholder = "Password";
+
+        private RegistryViewModel ViewModel;
 
         public RegistrationWindow()
         {
             InitializeComponent();
-            ResetFields();
+            ViewModel = new RegistryViewModel();
+            DataContext = ViewModel;
         }
 
-        private void ResetFields()
+        private void Window_Funcionality(object sender, MouseButtonEventArgs e)
         {
-            txtUsername.Text = UsernamePlaceholder;
-            txtPassword.Password = "";
-            txtPassword.Foreground = new SolidColorBrush(Colors.Gray);
+            if (e.LeftButton == MouseButtonState.Pressed)
+                DragMove();
         }
 
-        private void TextBox_GotFocus(object sender, RoutedEventArgs e)
+        private void Minimize_Window(object sender, RoutedEventArgs e)
         {
-            if (txtUsername.Text == UsernamePlaceholder)
-            {
-                txtUsername.Text = "";
-                txtUsername.Foreground = new SolidColorBrush(Colors.Black);
-            }
+            WindowState = WindowState.Minimized;
         }
 
-        private void TextBox_LostFocus(object sender, RoutedEventArgs e)
+        private void Close_Window(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtUsername.Text))
-            {
-                txtUsername.Text = UsernamePlaceholder;
-                txtUsername.Foreground = new SolidColorBrush(Colors.Gray);
-            }
+            Application.Current.Shutdown();
         }
 
-        private void PasswordBox_GotFocus(object sender, RoutedEventArgs e)
+
+
+        private string connectionString = "Server=LAPTOP-979QAFDU;Database=MeetingsCalendar;Integrated Security=True;";
+
+
+        private void Registy(object sender, RoutedEventArgs e)
         {
-            txtPassword.Foreground = new SolidColorBrush(Colors.Black);
-            if (txtPassword.Password == PasswordPlaceholder)
-            {
-                txtPassword.Password = "";
-            }
+            string nazwaUzytkownika = txtUsername.Text;
+            string haslo = txtPassword.Password;
+            string haslo_spr = txtPasswordCheck.Password;
+
+            ViewModel.Register(nazwaUzytkownika,haslo,haslo_spr,connectionString);
+            
+            
         }
 
-        private void PasswordBox_LostFocus(object sender, RoutedEventArgs e)
+        private void ToLogin_Window(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtPassword.Password))
-            {
-                txtPassword.Password = PasswordPlaceholder;
-                txtPassword.Foreground = new SolidColorBrush(Colors.Gray);
-            }
+            ViewModel.OpenLoginWindow();
         }
 
-        
     }
 }

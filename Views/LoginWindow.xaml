@@ -55,7 +55,8 @@
                 </Button.Style>
             </Button>
 
-            <Button Background="#E8E8E8" 
+            <Button x:Name="Close_button"
+                    Background="#E8E8E8" 
                     Content="x" 
                     Foreground="Black" 
                     BorderThickness="0" 
@@ -87,29 +88,29 @@
 
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                        <GradientStop Color="#FF6D92" Offset="0.75"/>
+                        <GradientStop Color="#B7F1DA" Offset="0.75"/>
                         <GradientStop Color="#FFDB23" Offset="0"/>
                     </LinearGradientBrush>
                 </Border.Background>
 
-                <Image Source="/image/meet.png" Height="300" Width="300"/>
+                <Image Source="/image/img_login2.png" Height="300" Width="300"/>
 
             </Border>
 
 
 
             <StackPanel Grid.Column="3" 
-                    Grid.ColumnSpan="3" 
-                    Grid.Row="2"
-                    Margin="0,20,0,20">
+                        Grid.ColumnSpan="3" 
+                        Grid.Row="2"
+                        Margin="0,20,0,20">
 
-                <Image Source="/image/logo_v2.png" Height="90" Width="130" Margin="0 0 0 20"/>
+                <Image Source="/image/logo.png" Height="90" Width="130" Margin="0 0 0 20"/>
 
                 <TextBlock Text="Nazwa użytkownika" Foreground="black" />
-                <TextBox x:Name="txtUsername" Margin="0,5,0,15" Height="20" BorderThickness="0 0 0 1"  Background="Transparent"/>
+                <TextBox x:Name="txtUsername" Margin="0,5,0,15" Height="20" MaxLength="50" BorderThickness="0 0 0 1"  Background="Transparent" SelectionBrush="{x:Null}"/>
 
                 <TextBlock Text="Hasło" Foreground="black" />
-                <PasswordBox x:Name="txtPassword" Margin="0,5,0,10" Height="20" BorderThickness="0 0 0 1"  Background="Transparent"/>
+                <PasswordBox x:Name="txtPassword" Margin="0,5,0,10" Height="20" MaxLength="50" BorderThickness="0 0 0 1"  Background="Transparent"/>
 
                 <Button Content="Zaloguj się" 
                         Foreground="White" 
@@ -135,7 +136,21 @@
 
                 <WrapPanel HorizontalAlignment="Center">
                     <TextBlock Text="Jeśli nie masz konta, "  Foreground="#C4C4C4"  FontSize="10" Padding="0 5 0 0"></TextBlock>
-                    <Button Content="zarejestruj się"  Foreground="#FF6D92"  FontSize="10" Padding="0 5 0 0" Background="Transparent" BorderThickness="0 0 0 1" BorderBrush="#FF6D92" Click="Minimize_Window" ></Button>
+                    <Button Content="zarejestruj się"   Foreground="#00D6AE" Cursor="Hand"   FontSize="10"  Click="ToRegister_Window"  >
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border Padding="0 5 0 0" Background="Transparent" BorderThickness="0 0 0 1" BorderBrush="#00D6AE">
+                                                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                    </Button>
                 </WrapPanel>
 
             </StackPanel>
